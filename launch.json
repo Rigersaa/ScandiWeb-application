@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "PHP Server",
+        "type": "php",
+        "request": "launch",
+        "runtimeExecutable": "php",
+        "runtimeArgs": [
+          "-S",
+          "localhost:8000",
+          "bootstrap.php" // Adjust to your main PHP script
+        ],
+        "port": 9000
+      },
+      {
+        "name": "Listen for XDebug",
+        "type": "php",
+        "request": "launch",
+        "port": 9003,
+        "pathMappings": {
+          "/var/www/html": "${workspaceFolder}"
+        }
+      }
+    ]
+  }
+  
